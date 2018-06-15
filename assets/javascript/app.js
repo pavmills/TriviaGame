@@ -118,9 +118,13 @@ $(document).ready(function() {
   var startScreen;
   var gameHTML;
   var counter = 20;
+  //Trivia Questions in order
   var questionArray = ["Who was known as the “Queen of Gospel” and described by Harry Belafonte as the “the single most powerful back woman in the U.S.?", "Modern gospel music began in 1930 when which church denomination publicly endorsed the genre?", "The Gospel Music Association sponsors annual awards for outstanding achievement in Christian Music.  What is the name of those awards?", "Who is the only solo performer to be inducted into the Rock and Roll, Country and Gospel Halls of Fame?", "What is the title of the number one best-selling black gospel song of all time?", "Which inspirational gospel singer sang at President Barak Obama’s 1st Presidential Inauguration?", "Which gospel duet recorded the hit The Prayer in 2003?", "'I sing because I’m happy', is the partial refrain from which gospel song?"];
+  //Trivia Answers
   var answerArray = [["Mahalia Jackson", "Yolanda Adams", "Shirley Caesar", "Tasha Cobbs"], ["Catholic","Lutheran","Methodist","Baptist"], ["Dove Awards", "Spirit Awards", "GMA Awards", "Tony Awards"], ["Michael Smith","Elvis Presley","Kenny Rogers","Amy Grant"], ["Amazing Grace", "Oh Happy Day", "We Shall Overcame", "Thank You Lord"], ["Aretha Franklin","Whitney Houston","Janet Jackson","Tina Turner"], ["Bebe and Cece Winans ", "Tina and Jack Turner", "Yolanda Adams and Donnie McClurkin", "Kirk Franklin and Tasha Cobbs"], ["Sacred Silence","Amazing Grace","The Choir Rejoices","His Eye is on the Sparrow"]];
+  //Images associated with correct answers
   var imageArray = ["<img class='center-block img-right' src='assets/images/Mahalia.jpg'>", "<img class='center-block img-right' src='assets/images/Baptist.png'>", "<img class='center-block img-right' src='assets/images/Dove.jpg'>", "<img class='center-block img-right' src='assets/images/Elvis.jpg'>", "<img class='center-block img-right' src='assets/images/Happy.png'>", "<img class='center-block img-right' src='assets/images/Aretha.jpg'>", "<img class='center-block img-right' src='assets/images/Prayer.jpg'>", "<img class='center-block img-right' src='assets/images/sparrow.jpg'>"];
+  //Correct Answers
   var correctAnswers = ["A. Mahalia Jackson", "D. Baptist", "A. Dove Awards", "B. Elvis Presley", "B. Oh Happy Day", "A. Aretha Franklin", "C. Yolanda Adams and Donnie McClurkin", "D. His Eye is on the Sparrow"];
   var questionCounter = 0;
   var selecterAnswer;
@@ -128,4 +132,4 @@ $(document).ready(function() {
   var correctTally = 0;
   var incorrectTally = 0;
   var unansweredTally = 0;
-  var clickSound = new Audio("assets/button.mp3");
+  var clickSound = new Audio("assets/buttonsound.mp3");
